@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import HeaderTitle from './HeaderTitle';
 import { AiOutlineSearch } from "react-icons/ai";
-import { FaBars } from "react-icons/fa"; // Hamburger menu icon
+import { FaBars } from "react-icons/fa"; 
 
 function Sidebar({ onUserSelect }) {
   const [users, setUser] = useState([]);
@@ -27,12 +27,12 @@ function Sidebar({ onUserSelect }) {
   const handleUserSelect = (user) => {
     setActiveUserId(user.id); 
     onUserSelect(user);
-    setIsSidebarOpen(false); // Close sidebar on user selection (for mobile)
-  };
+    setIsSidebarOpen(false); 
+    };
 
   return (
     <div className="relative z-50">
-      {/* Hamburger Icon for Mobile */}
+      
       <button
         onClick={() => setIsSidebarOpen(!isSidebarOpen)}
         className="lg:hidden p-2 fixed top-4 left-4 z-50 bg-[#55a9e5] text-white rounded shadow-md"

@@ -13,9 +13,7 @@ function App() {
     setTabIndex(0);
   };
 
-  useEffect(() => {
-    
-  }, [])
+ 
 
   const handleToast = (message, severity) => {
     setToast({ open: true, message, severity });
@@ -23,7 +21,7 @@ function App() {
   };
 
   return (
-    <div className="flex font-inter">
+    <div className="flex font-inter min-h-screen">
       {/* Sidebar */}
       <Sidebar onUserSelect={handleUserSelect} />
 
