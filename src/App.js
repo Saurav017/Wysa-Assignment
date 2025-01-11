@@ -26,7 +26,7 @@ function App() {
       <Sidebar onUserSelect={handleUserSelect} />
 
       {/* Main Content */}
-      <div className="flex-1 overflow-y-auto px-8">
+      <div className="flex-1 overflow-y-auto px-8 lg:ml-64">
         {selectedUser ? (
           <>
             {/* Tabs */}

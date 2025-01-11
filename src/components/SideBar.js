@@ -31,7 +31,7 @@ function Sidebar({ onUserSelect }) {
     };
 
   return (
-    <div className="relative z-50">
+    <div className=" fixed z-50 h-screen overflow-hidden">
       
       <button
         onClick={() => setIsSidebarOpen(!isSidebarOpen)}
